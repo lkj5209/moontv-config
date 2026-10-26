@@ -1,6 +1,6 @@
 # moontv-config — 自用 MoonTV 配置订阅（合并版）
 
-个人自用的 MoonTV / MoonTVPlus / LunaTV 配置订阅。在原订阅的基础上合并了多个公开配置仓库的存活源，去重后共 **97 个源**（原有 69 + 新增 28）。
+个人自用的 MoonTV / MoonTVPlus / LunaTV 配置订阅。在原订阅的基础上合并了多个公开配置仓库的存活源，去重后共 **101 个源**（原有 69 + 新增 28 + 2026-10-27 新增 4；另有 1 条原地换 API，见下）。
 
 ## 订阅地址
 
@@ -101,7 +101,7 @@ https://raw.githubusercontent.com/DaLongZhuaZi/moontv-config/main/sub.txt
 | 64 | 🔞-黄AVZY | `www.pgxdy.com` | https://www.pgxdy.com/api/json.php | 原有 · hafrey1/LunaTV-config |
 | 65 | 🔞白嫖资源 | `www.kxgav.com` | https://www.kxgav.com/api/json.php | 原有 · hafrey1/LunaTV-config |
 | 66 | 🔞杏吧资源 | `xingba111.com` | https://xingba222.com/api.php/provide/vod | 原有 · hafrey1/LunaTV-config |
-| 67 | 🔞大地资源 | `dadizy11.com` | https://dadiapi.com/feifei | 原有 · hafrey1/LunaTV-config |
+| 67 | 🔞大地资源 | `dadizy11.com` | https://dadiapi.com/api.php/provide/vod | 原有 · hafrey1/LunaTV-config |
 | 68 | 🔞色猫资源 | `semaozy1.com` | https://caiji.semaozy.net/inc/apijson_vod.php/provide/vod | 原有 · hafrey1/LunaTV-config |
 | 69 | 🔞-奥斯卡- | `aosikazy.com` | https://aosikazy.com/api.php/provide/vod | 原有 · hafrey1/LunaTV-config |
 | 70 | 🎬金鹰点播 | `jinyingzy_com` | https://jinyingzy.com/api.php/provide/vod | 新增 · smallmain/moontv-aggr-config / vodtv/api / pqguanyinli/moontv_shipinyuan / heardic/shipinyuan |
@@ -132,6 +132,16 @@ https://raw.githubusercontent.com/DaLongZhuaZi/moontv-config/main/sub.txt
 | 95 | 🔞豪华资源 | `hhzyapi_com` | https://hhzyapi.com/api.php/provide/vod/from/hhm3u8/at/json | 新增 · smallmain/moontv-aggr-config |
 | 96 | 🔞香奶儿资源 | `www_gdlsp_com` | https://www.gdlsp.com/api/json.php | 新增 · smallmain/moontv-aggr-config / pqguanyinli/moontv_shipinyuan / heardic/shipinyuan |
 | 97 | TV-步步高资源 | `api_yparse_com` | https://api.yparse.com/api/json | 新增 · pqguanyinli/moontv_shipinyuan / heardic/shipinyuan |
+| 98 | 🎬OK资源 | `api_okzyw_net` | https://api.okzyw.net/api.php/provide/vod | 新增 · smallmain/moontv-aggr-config（2026-10-27 上游更新，实测存活） |
+| 99 | 🎬大众资源采集接口 | `cdn_dzzyapi_com` | https://cdn.dzzyapi.com/api.php/provide/vod | 新增 · smallmain/moontv-aggr-config（2026-10-27 上游更新，实测存活） |
+| 100 | 🎬无水印资源网采集接口 | `api_wsyzy_net` | https://api.wsyzy.net/api.php/provide/vod | 新增 · smallmain/moontv-aggr-config（2026-10-27 上游更新，实测存活） |
+| 101 | 🔞金鹰资源3 | `jyzyapi_com_jinyingm3u8` | https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json | 新增 · smallmain/moontv-aggr-config（2026-10-27 上游更新，实测存活） |
+
+## 2026-10-27 更新
+
+- 新增 4 源（均经 `?ac=videolist` 实测返回 JSON 列表）：OK资源、大众资源采集接口、无水印资源网采集接口、金鹰资源3。
+- 🔞大地资源原地换 API：原 `https://dadiapi.com/feifei` 已死，改为上游标准路径 `https://dadiapi.com/api.php/provide/vod`（实测存活，总量 278,749）；key、名称、detail 均未动，特殊源标记不受影响。
+- 上游复查：hafrey1 基底 69 条零变化；vodtv 新增 8 站实测全灭、其 CORS 包装域名换血未跟；同站域名/路径变体 7 个未收（已有对应活源）；裸 IP 的建安资源站未收；pqguanyinli、heardic 已停更。
 
 ## 备注
 

@@ -353,7 +353,7 @@
     "dadizy11.com": {
       "_comment": "污染搜索结果",
       "name": "🔞大地资源",
-      "api": "https://dadiapi.com/feifei",
+      "api": "https://dadiapi.com/api.php/provide/vod",
       "detail": "https://dadizy11.com"
     },
     "semaozy1.com": {
@@ -507,6 +507,26 @@
       "name": "TV-步步高资源",
       "api": "https://api.yparse.com/api/json",
       "detail": "https://api.yparse.com"
+    },
+    "api_okzyw_net": {
+      "name": "🎬OK资源",
+      "api": "https://api.okzyw.net/api.php/provide/vod",
+      "detail": "https://okzyw.cc/index.php/label/help.html"
+    },
+    "cdn_dzzyapi_com": {
+      "name": "🎬大众资源采集接口",
+      "api": "https://cdn.dzzyapi.com/api.php/provide/vod",
+      "detail": "https://cdn.dzzyapi.com"
+    },
+    "api_wsyzy_net": {
+      "name": "🎬无水印资源网采集接口",
+      "api": "https://api.wsyzy.net/api.php/provide/vod",
+      "detail": "https://api.wsyzy.net"
+    },
+    "jyzyapi_com_jinyingm3u8": {
+      "name": "🔞金鹰资源3",
+      "api": "https://jyzyapi.com/provide/vod/from/jinyingm3u8/at/json",
+      "detail": "https://jyzyapi.com"
     }
   }
 }
